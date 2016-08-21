@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD53206A1D66F83400512A42 /* ReadBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5320681D66F83400512A42 /* ReadBannerCell.swift */; };
+		DD53206B1D66F83400512A42 /* ReadBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5320691D66F83400512A42 /* ReadBannerCell.xib */; };
+		DD53206D1D6707FB00512A42 /* ReadTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53206C1D6707FB00512A42 /* ReadTextModel.swift */; };
+		DD5320701D67115900512A42 /* ReadTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53206E1D67115900512A42 /* ReadTextCell.swift */; };
+		DD5320711D67115900512A42 /* ReadTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD53206F1D67115900512A42 /* ReadTextCell.xib */; };
+		DD5320731D672B5D00512A42 /* ReadText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5320721D672B5D00512A42 /* ReadText.swift */; };
 		DD5B30541D65ABFA00DC7443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B30531D65ABFA00DC7443 /* AppDelegate.swift */; };
 		DD5B30561D65ABFA00DC7443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B30551D65ABFA00DC7443 /* ViewController.swift */; };
 		DD5B30591D65ABFA00DC7443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5B30571D65ABFA00DC7443 /* Main.storyboard */; };
@@ -14,6 +20,7 @@
 		DD5B305E1D65ABFA00DC7443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5B305C1D65ABFA00DC7443 /* LaunchScreen.storyboard */; };
 		DD5B30691D65ABFB00DC7443 /* OneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B30681D65ABFB00DC7443 /* OneTests.swift */; };
 		DD5B30741D65ABFB00DC7443 /* OneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B30731D65ABFB00DC7443 /* OneUITests.swift */; };
+		DDC338D11D692A970092BCF7 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC338D01D692A970092BCF7 /* bg.png */; };
 		DDF6E0DB1D65B5FA00B35F1D /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E0B31D65B5FA00B35F1D /* AppIcon29x29@2x.png */; };
 		DDF6E0DC1D65B5FA00B35F1D /* AppIcon29x29@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E0B41D65B5FA00B35F1D /* AppIcon29x29@2x~ipad.png */; };
 		DDF6E0DD1D65B5FA00B35F1D /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E0B51D65B5FA00B35F1D /* AppIcon29x29@3x.png */; };
@@ -66,6 +73,11 @@
 		DDF6E12E1D65BE4C00B35F1D /* app_music_select.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E1261D65BE4C00B35F1D /* app_music_select.png */; };
 		DDF6E12F1D65BE4C00B35F1D /* app_read.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E1271D65BE4C00B35F1D /* app_read.png */; };
 		DDF6E1301D65BE4C00B35F1D /* app_read_select.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E1281D65BE4C00B35F1D /* app_read_select.png */; };
+		DDF6E1321D65CE7A00B35F1D /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E1311D65CE7A00B35F1D /* MovieModel.swift */; };
+		DDF6E1351D65CED200B35F1D /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E1331D65CED200B35F1D /* MovieCell.swift */; };
+		DDF6E1361D65CED200B35F1D /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E1341D65CED200B35F1D /* MovieCell.xib */; };
+		DDF6E1381D65E00A00B35F1D /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E1371D65E00A00B35F1D /* ReadView.swift */; };
+		DDF6E13A1D65E24D00B35F1D /* ReadBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E1391D65E24D00B35F1D /* ReadBannerModel.swift */; };
 		EB088E4EF73F8A0B4C3773DB /* Pods_One.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81A58704C9328E9DFD0E0E7 /* Pods_One.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +100,12 @@
 
 /* Begin PBXFileReference section */
 		8E4BBBA56A90A8921CE5ED45 /* Pods-One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One.release.xcconfig"; path = "Pods/Target Support Files/Pods-One/Pods-One.release.xcconfig"; sourceTree = "<group>"; };
+		DD5320681D66F83400512A42 /* ReadBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadBannerCell.swift; sourceTree = "<group>"; };
+		DD5320691D66F83400512A42 /* ReadBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadBannerCell.xib; sourceTree = "<group>"; };
+		DD53206C1D6707FB00512A42 /* ReadTextModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextModel.swift; sourceTree = "<group>"; };
+		DD53206E1D67115900512A42 /* ReadTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextCell.swift; sourceTree = "<group>"; };
+		DD53206F1D67115900512A42 /* ReadTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadTextCell.xib; sourceTree = "<group>"; };
+		DD5320721D672B5D00512A42 /* ReadText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadText.swift; sourceTree = "<group>"; };
 		DD5B30501D65ABFA00DC7443 /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5B30531D65ABFA00DC7443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5B30551D65ABFA00DC7443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +119,7 @@
 		DD5B306F1D65ABFB00DC7443 /* OneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5B30731D65ABFB00DC7443 /* OneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneUITests.swift; sourceTree = "<group>"; };
 		DD5B30751D65ABFB00DC7443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC338D01D692A970092BCF7 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		DDF6E0B31D65B5FA00B35F1D /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
 		DDF6E0B41D65B5FA00B35F1D /* AppIcon29x29@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x~ipad.png"; sourceTree = "<group>"; };
 		DDF6E0B51D65B5FA00B35F1D /* AppIcon29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@3x.png"; sourceTree = "<group>"; };
@@ -153,6 +172,11 @@
 		DDF6E1261D65BE4C00B35F1D /* app_music_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_music_select.png; sourceTree = "<group>"; };
 		DDF6E1271D65BE4C00B35F1D /* app_read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_read.png; sourceTree = "<group>"; };
 		DDF6E1281D65BE4C00B35F1D /* app_read_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_read_select.png; sourceTree = "<group>"; };
+		DDF6E1311D65CE7A00B35F1D /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		DDF6E1331D65CED200B35F1D /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		DDF6E1341D65CED200B35F1D /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		DDF6E1371D65E00A00B35F1D /* ReadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
+		DDF6E1391D65E24D00B35F1D /* ReadBannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadBannerModel.swift; sourceTree = "<group>"; };
 		E73AA161D8F5AB2ED9A38FB4 /* Pods-One.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One/Pods-One.debug.xcconfig"; sourceTree = "<group>"; };
 		E81A58704C9328E9DFD0E0E7 /* Pods_One.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -349,6 +373,7 @@
 		DD5B308A1D65ACBC00DC7443 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DDF6E1311D65CE7A00B35F1D /* MovieModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -356,6 +381,8 @@
 		DD5B308B1D65ACBC00DC7443 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				DDF6E1331D65CED200B35F1D /* MovieCell.swift */,
+				DDF6E1341D65CED200B35F1D /* MovieCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -413,6 +440,8 @@
 		DD5B30921D65ACBC00DC7443 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DDF6E1391D65E24D00B35F1D /* ReadBannerModel.swift */,
+				DD53206C1D6707FB00512A42 /* ReadTextModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -420,6 +449,12 @@
 		DD5B30931D65ACBC00DC7443 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				DDF6E1371D65E00A00B35F1D /* ReadView.swift */,
+				DD5320681D66F83400512A42 /* ReadBannerCell.swift */,
+				DD5320691D66F83400512A42 /* ReadBannerCell.xib */,
+				DD53206E1D67115900512A42 /* ReadTextCell.swift */,
+				DD53206F1D67115900512A42 /* ReadTextCell.xib */,
+				DD5320721D672B5D00512A42 /* ReadText.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -455,6 +490,7 @@
 		DDF6E0C21D65B5FA00B35F1D /* navBtn */ = {
 			isa = PBXGroup;
 			children = (
+				DDC338D01D692A970092BCF7 /* bg.png */,
 				DDF6E0C31D65B5FA00B35F1D /* book.png */,
 				DDF6E0C41D65B5FA00B35F1D /* close.png */,
 				DDF6E0C51D65B5FA00B35F1D /* left.png */,
@@ -613,6 +649,7 @@
 				DDF6E0EE1D65B5FA00B35F1D /* person.png in Resources */,
 				DDF6E12A1D65BE4C00B35F1D /* app_home_select.png in Resources */,
 				DDF6E0F41D65B5FA00B35F1D /* tanchu.png in Resources */,
+				DD5320711D67115900512A42 /* ReadTextCell.xib in Resources */,
 				DDF6E0EC1D65B5FA00B35F1D /* love.png in Resources */,
 				DDF6E0DF1D65B5FA00B35F1D /* AppIcon40x40@2x~ipad.png in Resources */,
 				DDF6E0EB1D65B5FA00B35F1D /* left.png in Resources */,
@@ -625,6 +662,7 @@
 				DDF6E0EF1D65B5FA00B35F1D /* phone.png in Resources */,
 				DDF6E0F31D65B5FA00B35F1D /* shezhi.png in Resources */,
 				DDF6E0F21D65B5FA00B35F1D /* qq.png in Resources */,
+				DD53206B1D66F83400512A42 /* ReadBannerCell.xib in Resources */,
 				DDF6E0EA1D65B5FA00B35F1D /* close.png in Resources */,
 				DDF6E12B1D65BE4C00B35F1D /* app_movie.png in Resources */,
 				DD5B305E1D65ABFA00DC7443 /* LaunchScreen.storyboard in Resources */,
@@ -634,7 +672,9 @@
 				DDF6E0E61D65B5FA00B35F1D /* LaunchImage-800-667h@2x.png in Resources */,
 				DD5B305B1D65ABFA00DC7443 /* Assets.xcassets in Resources */,
 				DDF6E0E41D65B5FA00B35F1D /* LaunchImage-700-568h@2x.png in Resources */,
+				DDF6E1361D65CED200B35F1D /* MovieCell.xib in Resources */,
 				DD5B30591D65ABFA00DC7443 /* Main.storyboard in Resources */,
+				DDC338D11D692A970092BCF7 /* bg.png in Resources */,
 				DDF6E0E01D65B5FA00B35F1D /* AppIcon40x40@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,22 +748,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF6E1321D65CE7A00B35F1D /* MovieModel.swift in Sources */,
 				DDF6E1171D65B89800B35F1D /* UIView+Util.swift in Sources */,
 				DD5B30561D65ABFA00DC7443 /* ViewController.swift in Sources */,
 				DDF6E10F1D65B89800B35F1D /* LaunchImageViewController.swift in Sources */,
 				DDF6E1111D65B89800B35F1D /* MainTabBarController.swift in Sources */,
+				DD5320731D672B5D00512A42 /* ReadText.swift in Sources */,
+				DDF6E13A1D65E24D00B35F1D /* ReadBannerModel.swift in Sources */,
 				DDF6E11D1D65B93F00B35F1D /* MusicViewController.swift in Sources */,
+				DD53206D1D6707FB00512A42 /* ReadTextModel.swift in Sources */,
+				DD53206A1D66F83400512A42 /* ReadBannerCell.swift in Sources */,
 				DDF6E1141D65B89800B35F1D /* UIImage+Gif.swift in Sources */,
 				DDF6E1191D65B92300B35F1D /* HomeViewController.swift in Sources */,
 				DDF6E11F1D65B94C00B35F1D /* ReadViewController.swift in Sources */,
 				DDF6E1101D65B89800B35F1D /* LFConst.swift in Sources */,
 				DDF6E1121D65B89800B35F1D /* NavViewController.swift in Sources */,
 				DDF6E1151D65B89800B35F1D /* UIImageView+Util.swift in Sources */,
+				DDF6E1381D65E00A00B35F1D /* ReadView.swift in Sources */,
 				DDF6E1161D65B89800B35F1D /* UILabel+Util.swift in Sources */,
 				DD5B30541D65ABFA00DC7443 /* AppDelegate.swift in Sources */,
+				DDF6E1351D65CED200B35F1D /* MovieCell.swift in Sources */,
 				DDF6E11B1D65B93100B35F1D /* MovieViewController.swift in Sources */,
 				DDF6E1131D65B89800B35F1D /* UIButton+Util.swift in Sources */,
 				DDF6E10C1D65B89800B35F1D /* BaseViewController.swift in Sources */,
+				DD5320701D67115900512A42 /* ReadTextCell.swift in Sources */,
 				DDF6E10E1D65B89800B35F1D /* Download.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

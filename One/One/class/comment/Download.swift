@@ -11,7 +11,7 @@ import Alamofire
 
 protocol DownloadDelegate:NSObjectProtocol{
     //下载成功
-    func downloader(downloader: Download, didFinishWithData data: NSData)
+    func downloader(downloader: Download, didFinishWithData data: NSData?)
     
     //下载失败
     func downloader(downloader: Download, didFailWithError error: NSError)

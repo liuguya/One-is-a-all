@@ -17,4 +17,9 @@ public let kSreenHeight = UIScreen.mainScreen().bounds.size.height
 public let homeUrl = "http://v3.wufazhuce.com:8000/api/hp/more/0"
 
 //四电影
-public let movieUrl = "http://v3.wufazhuce.com:8000/api/movie/list/0"
+public let movieUrl = "http://v3.wufazhuce.com:8000/api/movie/list/"
+
+//二阅读 banner
+public let readBannerUrl = "http://v3.wufazhuce.com:8000/api/reading/carousel"
+
+public let readTextUrl = "http://v3.wufazhuce.com:8000/api/reading/index"

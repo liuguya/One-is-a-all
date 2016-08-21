@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="moviewCellId" id="KGk-i7-Jjw" customClass="MovieCell" customModule="One" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xp0-35-ngV" userLabel="ImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dc-ez-EJE" propertyAccessControl="none">
+                        <rect key="frame" x="270" y="10" width="100" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Ilj-3n-ubF"/>
+                            <constraint firstAttribute="height" constant="80" id="lng-52-d7T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="50"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xp0-35-ngV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8Nr-UB-Lp6"/>
+                    <constraint firstAttribute="trailing" secondItem="Xp0-35-ngV" secondAttribute="trailing" id="93g-kv-OAS"/>
+                    <constraint firstAttribute="bottom" secondItem="6dc-ez-EJE" secondAttribute="bottom" constant="10" id="AJS-jl-SfZ"/>
+                    <constraint firstItem="Xp0-35-ngV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FwJ-ee-JYy"/>
+                    <constraint firstAttribute="trailing" secondItem="6dc-ez-EJE" secondAttribute="trailing" constant="5" id="IDN-2j-RjY"/>
+                    <constraint firstAttribute="bottom" secondItem="Xp0-35-ngV" secondAttribute="bottom" constant="5" id="WZt-AP-ZRl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ImageView" destination="Xp0-35-ngV" id="Gli-Xc-wDG"/>
+                <outlet property="imageView" destination="Xp0-35-ngV" id="Z89-Pu-7if"/>
+                <outlet property="label" destination="6dc-ez-EJE" id="XfK-62-4Pk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
