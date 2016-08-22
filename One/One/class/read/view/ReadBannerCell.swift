@@ -26,6 +26,8 @@ class ReadBannerCell: UITableViewCell {
     }
     
     
+    
+    
     func showData(){
         let cnt = bannerArray?.count
         if cnt>0{

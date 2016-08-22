@@ -27,37 +27,84 @@ class ReadTextCell: UITableViewCell {
     }
     
     
+    var textModel:Array<TextEssayModel>?{
+        didSet{
+            showData1()
+        }
+    }
     
-
+    var  textSerialArray:Array<TextSerialModel>?{
+        didSet{
+            showData2()
+        }
+    }
     
-    
-    func showData(model:TextEssayModel){
-        
-        titleLabel.text = model.hp_title!
-                print(model.hp_title!)
-                styleLabel.text = "问答"
-                autoLabel.numberOfLines = 0
-                autoLabel.text = model.author![0].user_name!
-                descLabel.numberOfLines = 0
-                descLabel.text = model.guide_word!
-                
-        
-        
-    
+    var  textQuestionArray:Array<TextQuestionModel>?{
+        didSet{
+            showData3()
+        }
     }
     
     
-//    class func createReadTextCell(tableView:UITableView,atIndexPath indexPath:NSIndexPath,withModel model:Array<TextEssayModel>) -> ReadTextCell {
-//        let cellId = "textCellId"
-//        var cell = tableView.dequeueReusableCellWithIdentifier(cellId) as? ReadTextCell
-//        if cell == nil {
-//            cell = NSBundle.mainBundle().loadNibNamed("ReadTextCell", owner: nil, options: nil).last as? ReadTextCell
-//        }
-//    
-//        cell?.model = model
-//        return cell!
-//        
-//    }
+    
+    
+ 
+    
+    func showData1(){
+        if textModel?.count > 0{
+            let model = textModel![0]
+            titleLabel.text = model.hp_title!
+            //print(model.hp_title)
+//            styleLabel.text = "短篇"
+            autoLabel.numberOfLines = 0
+            autoLabel.text = model.author![0].user_name!
+            descLabel.numberOfLines = 0
+            descLabel.text = model.guide_word!
+        
+        }
+    }
+    
+    func showData2(){
+        let model = textSerialArray![0]
+        titleLabel.text = model.title!
+        let ma = model.author! 
+        
+        autoLabel.text = ma.user_name!
+        descLabel.text = model.excerpt!
+    }
+    
+    func showData3(){
+        let model = textQuestionArray![0]
+        titleLabel.text = model.question_title!
+        autoLabel.text = model.answer_title!
+        descLabel.text = model.answer_content!
+    }
+    
+    
+    class func createReadTextCell(tableView:UITableView,atIndexPath indexPath:NSIndexPath,withModel model:ReadTextModel) -> ReadTextCell {
+        let cellId = "textCellId"
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellId) as? ReadTextCell
+        if cell == nil {
+            cell = NSBundle.mainBundle().loadNibNamed("ReadTextCell", owner: nil, options: nil).last as? ReadTextCell
+        }
+    
+        //let array =  NSArray(array: (model.data?.essay!)!)
+        //let curArray = array.subarrayWithRange(NSMakeRange(indexPath.row, 2))
+        if indexPath.row == 0{
+            cell?.styleLabel.text = "全篇"
+            cell!.textModel = model.data?.essay
+        }else if indexPath.row == 1{
+            cell?.styleLabel.text = "连载"
+            cell!.textSerialArray = model.data?.serial
+        }else{
+            cell?.styleLabel.text = "问答"
+            cell!.textQuestionArray = model.data?.question
+        }
+        
+        
+        return cell!
+        
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

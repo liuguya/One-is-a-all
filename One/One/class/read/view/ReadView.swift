@@ -11,7 +11,11 @@ import UIKit
 class ReadView: UIView {
 
     //表格
-    var type:Int?=10
+    var type:Int?{
+        didSet{
+        
+        }
+    }
     private var tbView:UITableView?
     //显示数据
     var bannerModel:ReadBannerModel?{
@@ -21,9 +25,17 @@ class ReadView: UIView {
         }
     }
     
+    var textModel:ReadTextModel?{
+        didSet{
+            
+            //刷新表格
+            tbView?.reloadData()
+        }
+    }
+    
     init(){
         super.init(frame:CGRectZero)
-        
+        //print(type)
         //创建表格视图
         tbView = UITableView(frame: CGRectZero, style: .Plain)
         tbView?.delegate = self
@@ -47,40 +59,62 @@ class ReadView: UIView {
 //
 extension ReadView:UITableViewDelegate,UITableViewDataSource{
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        var sectionNum = 1
-        if type == 10{
-            //banner
-            sectionNum = 1
-        }
-        return sectionNum
+      
+        return 2
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var rowNum = 0
-        if type == 10{
-            //banner
-            rowNum = 1
+        if section == 0{
+            //banner数据
+            if self.bannerModel?.data?.count > 0{
+                rowNum = 1
+            }
+        }else{
+            if self.textModel?.data?.essay?.count>0{
+                
+                rowNum = 3
+            }
+            
         }
         
         return rowNum
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
-        if type == 10{
-            if bannerModel?.data?.count > 0{
+        if indexPath.section == 0{
+            if self.bannerModel?.data?.count > 0{
                 cell = ReadBannerCell.createReadCell(tableView, atIndexPath: indexPath, withModel: bannerModel!)
+                cell.backgroundColor = UIColor.redColor()
+                
+                
+                return cell
             }
-            
-        }
+        }else{
+            if self.textModel?.data?.essay?.count>0{
+               cell = ReadTextCell.createReadTextCell(tableView, atIndexPath: indexPath, withModel: textModel!)
+                cell.layer.borderColor = UIColor.grayColor().CGColor
+                //cell.layer.borderWidth = 1
+                
+                return cell
+            }
+
         
+        }
         return cell
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         var height:CGFloat = 0
-        if type == 10{
-            //banner
-            height = 150
+        if indexPath.section == 0{
+            if self.bannerModel?.data?.count > 0{
+                //banner
+                height = 150
+            }
+        
+        }else{
+            height = 100
         }
+       
         
         return height
     }

@@ -12,7 +12,6 @@
 		DD53206D1D6707FB00512A42 /* ReadTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53206C1D6707FB00512A42 /* ReadTextModel.swift */; };
 		DD5320701D67115900512A42 /* ReadTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53206E1D67115900512A42 /* ReadTextCell.swift */; };
 		DD5320711D67115900512A42 /* ReadTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD53206F1D67115900512A42 /* ReadTextCell.xib */; };
-		DD5320731D672B5D00512A42 /* ReadText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5320721D672B5D00512A42 /* ReadText.swift */; };
 		DD5B30541D65ABFA00DC7443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B30531D65ABFA00DC7443 /* AppDelegate.swift */; };
 		DD5B30561D65ABFA00DC7443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B30551D65ABFA00DC7443 /* ViewController.swift */; };
 		DD5B30591D65ABFA00DC7443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5B30571D65ABFA00DC7443 /* Main.storyboard */; };
@@ -105,7 +104,6 @@
 		DD53206C1D6707FB00512A42 /* ReadTextModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextModel.swift; sourceTree = "<group>"; };
 		DD53206E1D67115900512A42 /* ReadTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextCell.swift; sourceTree = "<group>"; };
 		DD53206F1D67115900512A42 /* ReadTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadTextCell.xib; sourceTree = "<group>"; };
-		DD5320721D672B5D00512A42 /* ReadText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadText.swift; sourceTree = "<group>"; };
 		DD5B30501D65ABFA00DC7443 /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5B30531D65ABFA00DC7443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5B30551D65ABFA00DC7443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -454,7 +452,6 @@
 				DD5320691D66F83400512A42 /* ReadBannerCell.xib */,
 				DD53206E1D67115900512A42 /* ReadTextCell.swift */,
 				DD53206F1D67115900512A42 /* ReadTextCell.xib */,
-				DD5320721D672B5D00512A42 /* ReadText.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -753,7 +750,6 @@
 				DD5B30561D65ABFA00DC7443 /* ViewController.swift in Sources */,
 				DDF6E10F1D65B89800B35F1D /* LaunchImageViewController.swift in Sources */,
 				DDF6E1111D65B89800B35F1D /* MainTabBarController.swift in Sources */,
-				DD5320731D672B5D00512A42 /* ReadText.swift in Sources */,
 				DDF6E13A1D65E24D00B35F1D /* ReadBannerModel.swift in Sources */,
 				DDF6E11D1D65B93F00B35F1D /* MusicViewController.swift in Sources */,
 				DD53206D1D6707FB00512A42 /* ReadTextModel.swift in Sources */,
