@@ -30,6 +30,8 @@
 		DDDC45971D6EEBD80080DA64 /* 保存成功.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDC45961D6EEBD80080DA64 /* 保存成功.png */; };
 		DDDC459A1D6EEBFB0080DA64 /* 提示底.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDC45981D6EEBFB0080DA64 /* 提示底.png */; };
 		DDDC459B1D6EEBFB0080DA64 /* 提示底@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDC45991D6EEBFB0080DA64 /* 提示底@2x.png */; };
+		DDDC45A61D6EF34E0080DA64 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC45A51D6EF34E0080DA64 /* HomeModel.swift */; };
+		DDDC45AC1D6EF4DC0080DA64 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC45AB1D6EF4DC0080DA64 /* HomeViewController.swift */; };
 		DDEC957F1D6C361A00F4F4EE /* geci.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEC95791D6C361A00F4F4EE /* geci.png */; };
 		DDEC95801D6C361A00F4F4EE /* geci_select.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEC957A1D6C361A00F4F4EE /* geci_select.png */; };
 		DDEC95811D6C361A00F4F4EE /* i.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEC957B1D6C361A00F4F4EE /* i.png */; };
@@ -76,7 +78,6 @@
 		DDF6E1151D65B89800B35F1D /* UIImageView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E1091D65B89800B35F1D /* UIImageView+Util.swift */; };
 		DDF6E1161D65B89800B35F1D /* UILabel+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E10A1D65B89800B35F1D /* UILabel+Util.swift */; };
 		DDF6E1171D65B89800B35F1D /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E10B1D65B89800B35F1D /* UIView+Util.swift */; };
-		DDF6E1191D65B92300B35F1D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E1181D65B92300B35F1D /* HomeViewController.swift */; };
 		DDF6E11B1D65B93100B35F1D /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E11A1D65B93100B35F1D /* MovieViewController.swift */; };
 		DDF6E11D1D65B93F00B35F1D /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E11C1D65B93F00B35F1D /* MusicViewController.swift */; };
 		DDF6E11F1D65B94C00B35F1D /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6E11E1D65B94C00B35F1D /* ReadViewController.swift */; };
@@ -144,6 +145,8 @@
 		DDDC45961D6EEBD80080DA64 /* 保存成功.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "保存成功.png"; sourceTree = "<group>"; };
 		DDDC45981D6EEBFB0080DA64 /* 提示底.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提示底.png"; sourceTree = "<group>"; };
 		DDDC45991D6EEBFB0080DA64 /* 提示底@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提示底@2x.png"; sourceTree = "<group>"; };
+		DDDC45A51D6EF34E0080DA64 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		DDDC45AB1D6EF4DC0080DA64 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DDEC95791D6C361A00F4F4EE /* geci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geci.png; sourceTree = "<group>"; };
 		DDEC957A1D6C361A00F4F4EE /* geci_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geci_select.png; sourceTree = "<group>"; };
 		DDEC957B1D6C361A00F4F4EE /* i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i.png; sourceTree = "<group>"; };
@@ -190,7 +193,6 @@
 		DDF6E1091D65B89800B35F1D /* UIImageView+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Util.swift"; sourceTree = "<group>"; };
 		DDF6E10A1D65B89800B35F1D /* UILabel+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Util.swift"; sourceTree = "<group>"; };
 		DDF6E10B1D65B89800B35F1D /* UIView+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Util.swift"; sourceTree = "<group>"; };
-		DDF6E1181D65B92300B35F1D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DDF6E11A1D65B93100B35F1D /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		DDF6E11C1D65B93F00B35F1D /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		DDF6E11E1D65B94C00B35F1D /* ReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
@@ -364,7 +366,7 @@
 		DD5B30851D65ACBC00DC7443 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				DDF6E1181D65B92300B35F1D /* HomeViewController.swift */,
+				DDDC45AB1D6EF4DC0080DA64 /* HomeViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -372,6 +374,7 @@
 		DD5B30861D65ACBC00DC7443 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DDDC45A51D6EF34E0080DA64 /* HomeModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -812,11 +815,11 @@
 				DDF6E10F1D65B89800B35F1D /* LaunchImageViewController.swift in Sources */,
 				DDF6E1111D65B89800B35F1D /* MainTabBarController.swift in Sources */,
 				DDF6E13A1D65E24D00B35F1D /* ReadBannerModel.swift in Sources */,
+				DDDC45A61D6EF34E0080DA64 /* HomeModel.swift in Sources */,
 				DDF6E11D1D65B93F00B35F1D /* MusicViewController.swift in Sources */,
 				DD53206D1D6707FB00512A42 /* ReadTextModel.swift in Sources */,
 				DD53206A1D66F83400512A42 /* ReadBannerCell.swift in Sources */,
 				DDF6E1141D65B89800B35F1D /* UIImage+Gif.swift in Sources */,
-				DDF6E1191D65B92300B35F1D /* HomeViewController.swift in Sources */,
 				DDF6E11F1D65B94C00B35F1D /* ReadViewController.swift in Sources */,
 				DDF6E1101D65B89800B35F1D /* LFConst.swift in Sources */,
 				DD8597631D6B14AE0089C0B4 /* MusicModel.swift in Sources */,
@@ -829,6 +832,7 @@
 				DDF6E1351D65CED200B35F1D /* MovieCell.swift in Sources */,
 				DDF6E11B1D65B93100B35F1D /* MovieViewController.swift in Sources */,
 				DDF6E1131D65B89800B35F1D /* UIButton+Util.swift in Sources */,
+				DDDC45AC1D6EF4DC0080DA64 /* HomeViewController.swift in Sources */,
 				DD85976B1D6B247F0089C0B4 /* MusicView.swift in Sources */,
 				DDF6E10C1D65B89800B35F1D /* BaseViewController.swift in Sources */,
 				DD5320701D67115900512A42 /* ReadTextCell.swift in Sources */,
@@ -976,11 +980,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = One/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.lgy93.One;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -990,6 +996,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = One/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
