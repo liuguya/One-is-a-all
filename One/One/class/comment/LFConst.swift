@@ -23,3 +23,10 @@ public let movieUrl = "http://v3.wufazhuce.com:8000/api/movie/list/"
 public let readBannerUrl = "http://v3.wufazhuce.com:8000/api/reading/carousel"
 
 public let readTextUrl = "http://v3.wufazhuce.com:8000/api/reading/index"
+
+public let musicIdUrl = "http://v3.wufazhuce.com:8000/api/music/idlist/0"
+
+public let musicUrl = "http://v3.wufazhuce.com:8000/api/music/detail/"
+
+
+

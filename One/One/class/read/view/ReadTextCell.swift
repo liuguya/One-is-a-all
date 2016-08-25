@@ -51,9 +51,14 @@ class ReadTextCell: UITableViewCell {
  
     
     func showData1(){
+        //1.删除之前的子视图
+       
+        
         if textModel?.count > 0{
             let model = textModel![0]
+            titleLabel.numberOfLines = 0
             titleLabel.text = model.hp_title!
+            
             //print(model.hp_title)
 //            styleLabel.text = "短篇"
             autoLabel.numberOfLines = 0
@@ -65,7 +70,10 @@ class ReadTextCell: UITableViewCell {
     }
     
     func showData2(){
+        //1.删除之前的子视图
+     
         let model = textSerialArray![0]
+        titleLabel.numberOfLines = 0
         titleLabel.text = model.title!
         let ma = model.author! 
         
@@ -74,7 +82,10 @@ class ReadTextCell: UITableViewCell {
     }
     
     func showData3(){
+        //1.删除之前的子视图
+       
         let model = textQuestionArray![0]
+        titleLabel.numberOfLines = 0
         titleLabel.text = model.question_title!
         autoLabel.text = model.answer_title!
         descLabel.text = model.answer_content!
@@ -88,8 +99,11 @@ class ReadTextCell: UITableViewCell {
             cell = NSBundle.mainBundle().loadNibNamed("ReadTextCell", owner: nil, options: nil).last as? ReadTextCell
         }
     
-        //let array =  NSArray(array: (model.data?.essay!)!)
-        //let curArray = array.subarrayWithRange(NSMakeRange(indexPath.row, 2))
+      
+        cell?.styleLabel.layer.borderColor = UIColor(red: 13.0/255.0, green: 148.0/255.0, blue: 252.0/255.0, alpha: 1.0).CGColor
+        cell?.styleLabel.layer.borderWidth = 1
+        cell?.styleLabel.layer.masksToBounds = true
+        cell?.styleLabel.layer.cornerRadius = 5
         if indexPath.row == 0{
             cell?.styleLabel.text = "全篇"
             cell!.textModel = model.data?.essay

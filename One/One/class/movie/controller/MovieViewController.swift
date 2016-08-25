@@ -74,7 +74,7 @@ class MovieViewController: BaseViewController {
     
     //下载数据
     func createDownload(){
-        
+        ProgressHUD.showOnView(self.view)
         let urlString = String(format: "\(movieUrl)%ld", curPage)
         
         let download = Download()
@@ -95,7 +95,7 @@ class MovieViewController: BaseViewController {
 //MARK:Download代理下载
 extension MovieViewController:DownloadDelegate{
     func downloader(downloader: Download, didFailWithError error: NSError) {
-        print(error)
+        ProgressHUD.hideAfterFailOnView(self.view)
     }
     func downloader(downloader: Download, didFinishWithData data: NSData?){
         let jsonData = try! NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)
@@ -115,6 +115,7 @@ extension MovieViewController:DownloadDelegate{
             self.count = Int(model.id!)
             self.tbView?.reloadData()
             self.tbView?.footerView?.endRefreshing()
+            ProgressHUD.hideAfterSuccessOnView(self.view)
         }
     }
 }

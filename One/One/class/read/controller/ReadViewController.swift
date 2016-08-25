@@ -11,7 +11,7 @@ import UIKit
 class ReadViewController: BaseViewController {
     
     private var readView:ReadView?
-    //private var readText:ReadText?
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,12 +19,15 @@ class ReadViewController: BaseViewController {
         //导航
         createNav()
         
-        //下载数据阅读banner
-        createDownload()
-        
         //下载阅读文本text
         createDownloadText()
         
+        //下载数据阅读banner
+        createDownload()
+        
+        
+        
+        //初始化视图
         createHomePageView()
         
         
@@ -34,6 +37,8 @@ class ReadViewController: BaseViewController {
     
     //初始化视图
     func createHomePageView(){
+        ProgressHUD.showOnView(self.view)
+        
         self.automaticallyAdjustsScrollViewInsets = false
         readView = ReadView()
         //readView?.layer.borderColor = UIColor.redColor().CGColor
@@ -44,33 +49,8 @@ class ReadViewController: BaseViewController {
             (make) in
             
             make.edges.equalTo(self!.view).inset(UIEdgeInsetsMake(64, 0, 49, 0))
-            //make.left.right.equalTo(self!.view)
-            //make.top.equalTo(self!.view).offset(64)
-            //make.height.equalTo(150)
             })
-        
-//        readText = ReadText()
-//        readText!.layer.masksToBounds = true
-//        readText!.layer.cornerRadius = 10
-//        readText!.layer.borderWidth = 2
-//        readText!.layer.borderColor = UIColor(white: 0.1, alpha: 0.1).CGColor
-//        
-//        readText!.layer.shadowOffset = CGSizeMake(4,3)
-//        readText!.layer.shadowOpacity = 1
-//        readText!.layer.shadowRadius = 4
-//        readText!.layer.shadowColor = UIColor.blackColor().CGColor
-//        view.addSubview(readText!)
-//        readText!.snp_makeConstraints(closure: {
-//            [weak self]
-//            (make) in
-//            make.top.equalTo((self!.readView?.snp_bottom)!).offset(5)
-//            make.left.equalTo(self!.view).offset(10)
-//            make.right.equalTo(self!.view).offset(-10)
-//            make.bottom.equalTo(self!.view).offset(-64)
-//            })
-
-        
-        
+    
     }
     
     //导航
@@ -121,7 +101,7 @@ class ReadViewController: BaseViewController {
 //MARK:Download代理
 extension ReadViewController:DownloadDelegate{
     func downloader(downloader: Download, didFailWithError error: NSError) {
-        print(error)
+        ProgressHUD.hideAfterFailOnView(self.view)
     }
     func downloader(downloader: Download, didFinishWithData data: NSData?) {
         if (downloader.type)! == 10{
@@ -145,22 +125,14 @@ extension ReadViewController:DownloadDelegate{
                     
                     [weak self] in
                     self!.readView?.textModel = model
-                    //self!.readView?.type = 20
-                    
+                    ProgressHUD.hideAfterSuccessOnView(self!.view)
                  })
-                
-//                let model = ReadTextModel.parseModel(jsonData)
-//                //显示数据
-//                dispatch_async(dispatch_get_main_queue(), {
-//                    
-//                    [weak self] in
-//                    self!.readText?.textModel = model
-//                    //self!.readView?.type = 20
-//                    
-//                    })
+ 
             }
             
         }
+        
+        
         
         
     }
