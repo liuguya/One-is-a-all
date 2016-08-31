@@ -100,7 +100,7 @@ class MusicStoryCell: UITableViewCell {
     class func getLabHeigh(labelStr:String,font:UIFont,width:CGFloat) -> CGFloat {
         let statusLabelText: NSString = labelStr
         
-        let size = CGSizeMake(width, 6000)
+        let size = CGSizeMake(width, 500000)
         
         let dic = NSDictionary(object: font, forKey: NSFontAttributeName)
         

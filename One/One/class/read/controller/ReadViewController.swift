@@ -25,13 +25,8 @@ class ReadViewController: BaseViewController {
         //下载数据阅读banner
         createDownload()
         
-        
-        
         //初始化视图
         createHomePageView()
-        
-        
-        
         
     }
     
@@ -94,7 +89,39 @@ class ReadViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    //MARK:实现闭包
+    func withClick(model:ReadTextModel){
+        self.readView?.textModel = model
+        self.readView?.clickChose = {
+            (index,id,name) in
+            print(id)
+            if index == 0{
+                let readDetailCtrl = ReadDetailViewController()
+                readDetailCtrl.titleName = name
+                readDetailCtrl.titleId = id
+                self.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(readDetailCtrl, animated: true)
+                self.hidesBottomBarWhenPushed = false
+            }else if index == 1{
+                let serialCtrl = ReadSerialViewController()
+                serialCtrl.titleName = name
+                serialCtrl.titleId = id
+                self.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(serialCtrl, animated: true)
+                self.hidesBottomBarWhenPushed = false
+            
+            }else if index == 2{
+                let questCtrl = ReadQuestViewController()
+                questCtrl.titleName = name
+                questCtrl.titleId = id
+                self.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(questCtrl, animated: true)
+                self.hidesBottomBarWhenPushed = false
+            
+            }
+        }
+    
+    }
 
 }
 
@@ -124,7 +151,7 @@ extension ReadViewController:DownloadDelegate{
                 dispatch_async(dispatch_get_main_queue(), {
                     
                     [weak self] in
-                    self!.readView?.textModel = model
+                    self!.withClick(model)
                     ProgressHUD.hideAfterSuccessOnView(self!.view)
                  })
  

@@ -28,5 +28,31 @@ public let musicIdUrl = "http://v3.wufazhuce.com:8000/api/music/idlist/0"
 
 public let musicUrl = "http://v3.wufazhuce.com:8000/api/music/detail/"
 
+//短篇内容
+public let sortDetailUrl = "http://v3.wufazhuce.com:8000/api/essay/"
+//短篇相关推荐
+public let sortDetailRecommendUrl = "http://v3.wufazhuce.com:8000/api/related/essay/"
+//短篇的评论
+public let sortDetailCommentUrl = "http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/"
+
+//连载内容
+public let lianzaiUrl = "http://v3.wufazhuce.com:8000/api/serialcontent/"
+//连载相关推荐
+public let lianzaiRecommendUrl = "http://v3.wufazhuce.com:8000/api/related/serial/"
+
+//连载评论
+public let lianzaiCommentUrl = "http://v3.wufazhuce.com:8000/api/comment/praiseandtime/serial/"
+
+//问题
+public let questionUrl = "http://v3.wufazhuce.com:8000/api/question/"
+
+//问题相关推荐
+public let questionRecommendUrl = "http://v3.wufazhuce.com:8000/api/related/question/"
+
+//问题相关评论
+public let questionCommentUrl = "http://v3.wufazhuce.com:8000/api/comment/praiseandtime/question/"
+
+
+
 
 

@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ReadView: UIView {
+class ReadView: UIView{
 
-  
+    var clickChose:((Int,String,String)->Void)?
+    
     private var tbView:UITableView?
     //显示数据
     var bannerModel:ReadBannerModel?{
@@ -24,7 +25,7 @@ class ReadView: UIView {
         didSet{
             
             //刷新表格
-            tbView?.reloadData()
+            tbView!.reloadSections(NSIndexSet(index: 1), withRowAnimation: .Automatic)
         }
     }
     
@@ -96,6 +97,7 @@ extension ReadView:UITableViewDelegate,UITableViewDataSource{
 
         
         }
+        cell.selectionStyle = .None
         return cell
     }
     
@@ -113,5 +115,22 @@ extension ReadView:UITableViewDelegate,UITableViewDataSource{
        
         
         return height
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //文章
+        if indexPath.section == 1{
+            if indexPath.row == 0{
+                let id = self.textModel?.data?.essay![0].content_id
+                self.clickChose!(0,id!,"短篇")
+            }else if indexPath.row == 1{
+                let id = self.textModel?.data?.serial![0].id
+                self.clickChose!(1,id!,"连载")
+            }else if indexPath.row == 2{
+                let id = self.textModel?.data?.question![0].question_id
+                self.clickChose!(2,id!,"问答")
+            }
+        }
+        
     }
 }

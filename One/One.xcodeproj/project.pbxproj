@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2CA1231D7566350095EE18 /* ReadSerialRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2CA1221D7566350095EE18 /* ReadSerialRecommendModel.swift */; };
+		DD2CA1251D7579770095EE18 /* ReadQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2CA1241D7579770095EE18 /* ReadQuestViewController.swift */; };
+		DD2CA1271D757EE90095EE18 /* QuestDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2CA1261D757EE90095EE18 /* QuestDetailModel.swift */; };
+		DD2CA12A1D7581760095EE18 /* QuestDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2CA1281D7581760095EE18 /* QuestDetailCell.swift */; };
+		DD2CA12B1D7581760095EE18 /* QuestDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2CA1291D7581760095EE18 /* QuestDetailCell.xib */; };
+		DD51BC861D741501009FF428 /* ReadAutoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51BC841D741501009FF428 /* ReadAutoCell.swift */; };
+		DD51BC871D741501009FF428 /* ReadAutoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51BC851D741501009FF428 /* ReadAutoCell.xib */; };
+		DD51BC891D741AC6009FF428 /* ReadDetailRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51BC881D741AC6009FF428 /* ReadDetailRecommendModel.swift */; };
+		DD51BC8C1D74246F009FF428 /* ReadDetailRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51BC8A1D74246F009FF428 /* ReadDetailRecommendCell.swift */; };
+		DD51BC8D1D74246F009FF428 /* ReadDetailRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51BC8B1D74246F009FF428 /* ReadDetailRecommendCell.xib */; };
+		DD51BC8F1D742893009FF428 /* CBHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51BC8E1D742893009FF428 /* CBHeadView.swift */; };
+		DD51BC911D7430BD009FF428 /* ReadDetailCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51BC901D7430BD009FF428 /* ReadDetailCommentModel.swift */; };
+		DD51BC941D7436A7009FF428 /* ReadDetailCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51BC921D7436A7009FF428 /* ReadDetailCommentCell.swift */; };
+		DD51BC951D7436A7009FF428 /* ReadDetailCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51BC931D7436A7009FF428 /* ReadDetailCommentCell.xib */; };
+		DD51BC971D745A8D009FF428 /* ReadSerialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51BC961D745A8D009FF428 /* ReadSerialViewController.swift */; };
+		DD51BC991D745F21009FF428 /* ReadSerialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51BC981D745F21009FF428 /* ReadSerialModel.swift */; };
 		DD53206A1D66F83400512A42 /* ReadBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5320681D66F83400512A42 /* ReadBannerCell.swift */; };
 		DD53206B1D66F83400512A42 /* ReadBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5320691D66F83400512A42 /* ReadBannerCell.xib */; };
 		DD53206D1D6707FB00512A42 /* ReadTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53206C1D6707FB00512A42 /* ReadTextModel.swift */; };
@@ -19,6 +35,8 @@
 		DD5B305E1D65ABFA00DC7443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5B305C1D65ABFA00DC7443 /* LaunchScreen.storyboard */; };
 		DD5B30691D65ABFB00DC7443 /* OneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B30681D65ABFB00DC7443 /* OneTests.swift */; };
 		DD5B30741D65ABFB00DC7443 /* OneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B30731D65ABFB00DC7443 /* OneUITests.swift */; };
+		DD851B901D70482800AE6759 /* ReadDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD851B8E1D70482800AE6759 /* ReadDetailCell.swift */; };
+		DD851B911D70482800AE6759 /* ReadDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD851B8F1D70482800AE6759 /* ReadDetailCell.xib */; };
 		DD8597631D6B14AE0089C0B4 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8597621D6B14AE0089C0B4 /* MusicModel.swift */; };
 		DD85976B1D6B247F0089C0B4 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD85976A1D6B247F0089C0B4 /* MusicView.swift */; };
 		DD85976E1D6B25F60089C0B4 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD85976C1D6B25F60089C0B4 /* MusicCell.swift */; };
@@ -32,12 +50,15 @@
 		DDDC459B1D6EEBFB0080DA64 /* 提示底@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDDC45991D6EEBFB0080DA64 /* 提示底@2x.png */; };
 		DDDC45A61D6EF34E0080DA64 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC45A51D6EF34E0080DA64 /* HomeModel.swift */; };
 		DDDC45AC1D6EF4DC0080DA64 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC45AB1D6EF4DC0080DA64 /* HomeViewController.swift */; };
+		DDDC45AE1D6F13230080DA64 /* ReadDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC45AD1D6F13230080DA64 /* ReadDetailViewController.swift */; };
+		DDDC45B01D6F20600080DA64 /* ReadDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDC45AF1D6F20600080DA64 /* ReadDetailModel.swift */; };
 		DDEC957F1D6C361A00F4F4EE /* geci.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEC95791D6C361A00F4F4EE /* geci.png */; };
 		DDEC95801D6C361A00F4F4EE /* geci_select.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEC957A1D6C361A00F4F4EE /* geci_select.png */; };
 		DDEC95811D6C361A00F4F4EE /* i.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEC957B1D6C361A00F4F4EE /* i.png */; };
 		DDEC95821D6C361A00F4F4EE /* i_select.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEC957C1D6C361A00F4F4EE /* i_select.png */; };
 		DDEC95831D6C361A00F4F4EE /* readBook.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEC957D1D6C361A00F4F4EE /* readBook.png */; };
 		DDEC95841D6C361A00F4F4EE /* readBook_select.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEC957E1D6C361A00F4F4EE /* readBook_select.png */; };
+		DDF122541D76B7F800E269EE /* QuestRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF122531D76B7F800E269EE /* QuestRecommendModel.swift */; };
 		DDF6E0DB1D65B5FA00B35F1D /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E0B31D65B5FA00B35F1D /* AppIcon29x29@2x.png */; };
 		DDF6E0DC1D65B5FA00B35F1D /* AppIcon29x29@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E0B41D65B5FA00B35F1D /* AppIcon29x29@2x~ipad.png */; };
 		DDF6E0DD1D65B5FA00B35F1D /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6E0B51D65B5FA00B35F1D /* AppIcon29x29@3x.png */; };
@@ -116,6 +137,22 @@
 
 /* Begin PBXFileReference section */
 		8E4BBBA56A90A8921CE5ED45 /* Pods-One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One.release.xcconfig"; path = "Pods/Target Support Files/Pods-One/Pods-One.release.xcconfig"; sourceTree = "<group>"; };
+		DD2CA1221D7566350095EE18 /* ReadSerialRecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadSerialRecommendModel.swift; sourceTree = "<group>"; };
+		DD2CA1241D7579770095EE18 /* ReadQuestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadQuestViewController.swift; sourceTree = "<group>"; };
+		DD2CA1261D757EE90095EE18 /* QuestDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestDetailModel.swift; sourceTree = "<group>"; };
+		DD2CA1281D7581760095EE18 /* QuestDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestDetailCell.swift; sourceTree = "<group>"; };
+		DD2CA1291D7581760095EE18 /* QuestDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestDetailCell.xib; sourceTree = "<group>"; };
+		DD51BC841D741501009FF428 /* ReadAutoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReadAutoCell.swift; path = ../model/ReadAutoCell.swift; sourceTree = "<group>"; };
+		DD51BC851D741501009FF428 /* ReadAutoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReadAutoCell.xib; path = ../model/ReadAutoCell.xib; sourceTree = "<group>"; };
+		DD51BC881D741AC6009FF428 /* ReadDetailRecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadDetailRecommendModel.swift; sourceTree = "<group>"; };
+		DD51BC8A1D74246F009FF428 /* ReadDetailRecommendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadDetailRecommendCell.swift; sourceTree = "<group>"; };
+		DD51BC8B1D74246F009FF428 /* ReadDetailRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadDetailRecommendCell.xib; sourceTree = "<group>"; };
+		DD51BC8E1D742893009FF428 /* CBHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBHeadView.swift; sourceTree = "<group>"; };
+		DD51BC901D7430BD009FF428 /* ReadDetailCommentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadDetailCommentModel.swift; sourceTree = "<group>"; };
+		DD51BC921D7436A7009FF428 /* ReadDetailCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadDetailCommentCell.swift; sourceTree = "<group>"; };
+		DD51BC931D7436A7009FF428 /* ReadDetailCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadDetailCommentCell.xib; sourceTree = "<group>"; };
+		DD51BC961D745A8D009FF428 /* ReadSerialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadSerialViewController.swift; sourceTree = "<group>"; };
+		DD51BC981D745F21009FF428 /* ReadSerialModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadSerialModel.swift; sourceTree = "<group>"; };
 		DD5320681D66F83400512A42 /* ReadBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadBannerCell.swift; sourceTree = "<group>"; };
 		DD5320691D66F83400512A42 /* ReadBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadBannerCell.xib; sourceTree = "<group>"; };
 		DD53206C1D6707FB00512A42 /* ReadTextModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTextModel.swift; sourceTree = "<group>"; };
@@ -134,6 +171,8 @@
 		DD5B306F1D65ABFB00DC7443 /* OneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5B30731D65ABFB00DC7443 /* OneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneUITests.swift; sourceTree = "<group>"; };
 		DD5B30751D65ABFB00DC7443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD851B8E1D70482800AE6759 /* ReadDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReadDetailCell.swift; path = ../model/ReadDetailCell.swift; sourceTree = "<group>"; };
+		DD851B8F1D70482800AE6759 /* ReadDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReadDetailCell.xib; path = ../model/ReadDetailCell.xib; sourceTree = "<group>"; };
 		DD8597621D6B14AE0089C0B4 /* MusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
 		DD85976A1D6B247F0089C0B4 /* MusicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		DD85976C1D6B25F60089C0B4 /* MusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
@@ -147,12 +186,15 @@
 		DDDC45991D6EEBFB0080DA64 /* 提示底@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提示底@2x.png"; sourceTree = "<group>"; };
 		DDDC45A51D6EF34E0080DA64 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		DDDC45AB1D6EF4DC0080DA64 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DDDC45AD1D6F13230080DA64 /* ReadDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadDetailViewController.swift; sourceTree = "<group>"; };
+		DDDC45AF1D6F20600080DA64 /* ReadDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadDetailModel.swift; sourceTree = "<group>"; };
 		DDEC95791D6C361A00F4F4EE /* geci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geci.png; sourceTree = "<group>"; };
 		DDEC957A1D6C361A00F4F4EE /* geci_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geci_select.png; sourceTree = "<group>"; };
 		DDEC957B1D6C361A00F4F4EE /* i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i.png; sourceTree = "<group>"; };
 		DDEC957C1D6C361A00F4F4EE /* i_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i_select.png; sourceTree = "<group>"; };
 		DDEC957D1D6C361A00F4F4EE /* readBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = readBook.png; sourceTree = "<group>"; };
 		DDEC957E1D6C361A00F4F4EE /* readBook_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = readBook_select.png; sourceTree = "<group>"; };
+		DDF122531D76B7F800E269EE /* QuestRecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestRecommendModel.swift; sourceTree = "<group>"; };
 		DDF6E0B31D65B5FA00B35F1D /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
 		DDF6E0B41D65B5FA00B35F1D /* AppIcon29x29@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x~ipad.png"; sourceTree = "<group>"; };
 		DDF6E0B51D65B5FA00B35F1D /* AppIcon29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@3x.png"; sourceTree = "<group>"; };
@@ -349,6 +391,7 @@
 				DDF6E1091D65B89800B35F1D /* UIImageView+Util.swift */,
 				DDF6E10A1D65B89800B35F1D /* UILabel+Util.swift */,
 				DDF6E10B1D65B89800B35F1D /* UIView+Util.swift */,
+				DD51BC8E1D742893009FF428 /* CBHeadView.swift */,
 			);
 			path = comment;
 			sourceTree = "<group>";
@@ -472,6 +515,9 @@
 			isa = PBXGroup;
 			children = (
 				DDF6E11E1D65B94C00B35F1D /* ReadViewController.swift */,
+				DDDC45AD1D6F13230080DA64 /* ReadDetailViewController.swift */,
+				DD51BC961D745A8D009FF428 /* ReadSerialViewController.swift */,
+				DD2CA1241D7579770095EE18 /* ReadQuestViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -481,6 +527,13 @@
 			children = (
 				DDF6E1391D65E24D00B35F1D /* ReadBannerModel.swift */,
 				DD53206C1D6707FB00512A42 /* ReadTextModel.swift */,
+				DDDC45AF1D6F20600080DA64 /* ReadDetailModel.swift */,
+				DD51BC881D741AC6009FF428 /* ReadDetailRecommendModel.swift */,
+				DD51BC901D7430BD009FF428 /* ReadDetailCommentModel.swift */,
+				DD51BC981D745F21009FF428 /* ReadSerialModel.swift */,
+				DD2CA1221D7566350095EE18 /* ReadSerialRecommendModel.swift */,
+				DD2CA1261D757EE90095EE18 /* QuestDetailModel.swift */,
+				DDF122531D76B7F800E269EE /* QuestRecommendModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -488,11 +541,21 @@
 		DD5B30931D65ACBC00DC7443 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				DD851B8E1D70482800AE6759 /* ReadDetailCell.swift */,
+				DD851B8F1D70482800AE6759 /* ReadDetailCell.xib */,
+				DD51BC841D741501009FF428 /* ReadAutoCell.swift */,
+				DD51BC851D741501009FF428 /* ReadAutoCell.xib */,
 				DDF6E1371D65E00A00B35F1D /* ReadView.swift */,
 				DD5320681D66F83400512A42 /* ReadBannerCell.swift */,
 				DD5320691D66F83400512A42 /* ReadBannerCell.xib */,
 				DD53206E1D67115900512A42 /* ReadTextCell.swift */,
 				DD53206F1D67115900512A42 /* ReadTextCell.xib */,
+				DD51BC8A1D74246F009FF428 /* ReadDetailRecommendCell.swift */,
+				DD51BC8B1D74246F009FF428 /* ReadDetailRecommendCell.xib */,
+				DD51BC921D7436A7009FF428 /* ReadDetailCommentCell.swift */,
+				DD51BC931D7436A7009FF428 /* ReadDetailCommentCell.xib */,
+				DD2CA1281D7581760095EE18 /* QuestDetailCell.swift */,
+				DD2CA1291D7581760095EE18 /* QuestDetailCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -686,6 +749,7 @@
 				DDF6E12C1D65BE4C00B35F1D /* app_movie_select.png in Resources */,
 				DDF6E12F1D65BE4C00B35F1D /* app_read.png in Resources */,
 				DDF6E0DD1D65B5FA00B35F1D /* AppIcon29x29@3x.png in Resources */,
+				DD51BC951D7436A7009FF428 /* ReadDetailCommentCell.xib in Resources */,
 				DDEC957F1D6C361A00F4F4EE /* geci.png in Resources */,
 				DD85976F1D6B25F60089C0B4 /* MusicCell.xib in Resources */,
 				DDF6E0F61D65B5FA00B35F1D /* world.png in Resources */,
@@ -698,6 +762,7 @@
 				DDF6E0DE1D65B5FA00B35F1D /* AppIcon40x40@2x.png in Resources */,
 				DDF6E0E71D65B5FA00B35F1D /* LaunchImage-800-Landscape-736h@3x.png in Resources */,
 				DDF6E12E1D65BE4C00B35F1D /* app_music_select.png in Resources */,
+				DD851B911D70482800AE6759 /* ReadDetailCell.xib in Resources */,
 				DDF6E0EE1D65B5FA00B35F1D /* person.png in Resources */,
 				DDF6E12A1D65BE4C00B35F1D /* app_home_select.png in Resources */,
 				DDF6E0F41D65B5FA00B35F1D /* tanchu.png in Resources */,
@@ -706,17 +771,20 @@
 				DDF6E0EC1D65B5FA00B35F1D /* love.png in Resources */,
 				DDF6E0DF1D65B5FA00B35F1D /* AppIcon40x40@2x~ipad.png in Resources */,
 				DDF6E0EB1D65B5FA00B35F1D /* left.png in Resources */,
+				DD51BC8D1D74246F009FF428 /* ReadDetailRecommendCell.xib in Resources */,
 				DDF6E0F01D65B5FA00B35F1D /* pinglun.png in Resources */,
 				DDEC95801D6C361A00F4F4EE /* geci_select.png in Resources */,
 				DDF6E0E21D65B5FA00B35F1D /* AppIcon60x60@2x.png in Resources */,
 				DDF6E0F71D65B5FA00B35F1D /* xinlang.png in Resources */,
 				DDF6E0E51D65B5FA00B35F1D /* LaunchImage-700@2x.png in Resources */,
+				DD51BC871D741501009FF428 /* ReadAutoCell.xib in Resources */,
 				DDF6E0E81D65B5FA00B35F1D /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				DDF6E0DC1D65B5FA00B35F1D /* AppIcon29x29@2x~ipad.png in Resources */,
 				DDF6E0EF1D65B5FA00B35F1D /* phone.png in Resources */,
 				DDDC459A1D6EEBFB0080DA64 /* 提示底.png in Resources */,
 				DDF6E0F31D65B5FA00B35F1D /* shezhi.png in Resources */,
 				DDF6E0F21D65B5FA00B35F1D /* qq.png in Resources */,
+				DD2CA12B1D7581760095EE18 /* QuestDetailCell.xib in Resources */,
 				DD53206B1D66F83400512A42 /* ReadBannerCell.xib in Resources */,
 				DDDC45971D6EEBD80080DA64 /* 保存成功.png in Resources */,
 				DDF6E0EA1D65B5FA00B35F1D /* close.png in Resources */,
@@ -809,28 +877,44 @@
 			files = (
 				DDF6E1321D65CE7A00B35F1D /* MovieModel.swift in Sources */,
 				DDF6E1171D65B89800B35F1D /* UIView+Util.swift in Sources */,
+				DD2CA1251D7579770095EE18 /* ReadQuestViewController.swift in Sources */,
 				DDDC45951D6EEB860080DA64 /* ProgressHUD.swift in Sources */,
 				DD85976E1D6B25F60089C0B4 /* MusicCell.swift in Sources */,
+				DD51BC971D745A8D009FF428 /* ReadSerialViewController.swift in Sources */,
 				DD5B30561D65ABFA00DC7443 /* ViewController.swift in Sources */,
 				DDF6E10F1D65B89800B35F1D /* LaunchImageViewController.swift in Sources */,
 				DDF6E1111D65B89800B35F1D /* MainTabBarController.swift in Sources */,
 				DDF6E13A1D65E24D00B35F1D /* ReadBannerModel.swift in Sources */,
+				DDDC45AE1D6F13230080DA64 /* ReadDetailViewController.swift in Sources */,
+				DD2CA1271D757EE90095EE18 /* QuestDetailModel.swift in Sources */,
 				DDDC45A61D6EF34E0080DA64 /* HomeModel.swift in Sources */,
+				DD51BC861D741501009FF428 /* ReadAutoCell.swift in Sources */,
+				DD51BC8F1D742893009FF428 /* CBHeadView.swift in Sources */,
 				DDF6E11D1D65B93F00B35F1D /* MusicViewController.swift in Sources */,
 				DD53206D1D6707FB00512A42 /* ReadTextModel.swift in Sources */,
 				DD53206A1D66F83400512A42 /* ReadBannerCell.swift in Sources */,
 				DDF6E1141D65B89800B35F1D /* UIImage+Gif.swift in Sources */,
+				DD51BC941D7436A7009FF428 /* ReadDetailCommentCell.swift in Sources */,
 				DDF6E11F1D65B94C00B35F1D /* ReadViewController.swift in Sources */,
 				DDF6E1101D65B89800B35F1D /* LFConst.swift in Sources */,
+				DD51BC891D741AC6009FF428 /* ReadDetailRecommendModel.swift in Sources */,
+				DD2CA12A1D7581760095EE18 /* QuestDetailCell.swift in Sources */,
+				DDDC45B01D6F20600080DA64 /* ReadDetailModel.swift in Sources */,
 				DD8597631D6B14AE0089C0B4 /* MusicModel.swift in Sources */,
 				DDF6E1121D65B89800B35F1D /* NavViewController.swift in Sources */,
+				DD2CA1231D7566350095EE18 /* ReadSerialRecommendModel.swift in Sources */,
+				DD51BC911D7430BD009FF428 /* ReadDetailCommentModel.swift in Sources */,
+				DD851B901D70482800AE6759 /* ReadDetailCell.swift in Sources */,
 				DDF6E1151D65B89800B35F1D /* UIImageView+Util.swift in Sources */,
 				DDF6E1381D65E00A00B35F1D /* ReadView.swift in Sources */,
 				DDF6E1161D65B89800B35F1D /* UILabel+Util.swift in Sources */,
 				DD5B30541D65ABFA00DC7443 /* AppDelegate.swift in Sources */,
 				DDC6B5CA1D6D8F0E00052C11 /* MusicStoryCell.swift in Sources */,
+				DD51BC991D745F21009FF428 /* ReadSerialModel.swift in Sources */,
 				DDF6E1351D65CED200B35F1D /* MovieCell.swift in Sources */,
+				DDF122541D76B7F800E269EE /* QuestRecommendModel.swift in Sources */,
 				DDF6E11B1D65B93100B35F1D /* MovieViewController.swift in Sources */,
+				DD51BC8C1D74246F009FF428 /* ReadDetailRecommendCell.swift in Sources */,
 				DDF6E1131D65B89800B35F1D /* UIButton+Util.swift in Sources */,
 				DDDC45AC1D6EF4DC0080DA64 /* HomeViewController.swift in Sources */,
 				DD85976B1D6B247F0089C0B4 /* MusicView.swift in Sources */,

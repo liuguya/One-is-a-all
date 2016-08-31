@@ -41,10 +41,14 @@ class NavViewController: UIViewController {
         
     }
     
+  
+    
+    
     //返回按钮
     func addNavBackBtn() {
+    
         
-        self.addNavBtn("返回", target: self, action: #selector(backAction), isLeft: true, bgImageName: "")
+        self.addNavBtn("", target: self, action: #selector(backAction), isLeft: true, bgImageName: "left")
         
     }
     func backAction(){

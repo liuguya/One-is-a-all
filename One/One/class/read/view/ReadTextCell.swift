@@ -9,7 +9,8 @@
 import UIKit
 
 class ReadTextCell: UITableViewCell {
-
+    //点击闭包
+    
     @IBOutlet weak var clickBtn: UIButton!
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -23,7 +24,7 @@ class ReadTextCell: UITableViewCell {
     
    
     @IBAction func clickAction(sender: UIButton) {
-        print("11")
+       // print(sender.tag)
     }
     
     
